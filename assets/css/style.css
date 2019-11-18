@@ -30,7 +30,7 @@ h2 {
 }
 
 .main-button-row {
-    width 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
