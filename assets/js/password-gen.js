@@ -13,6 +13,10 @@ function removeClass() {
 generateBtn.addEventListener('click', function(){
     textarea.value="";
     var passwordLength = prompt('How many characters?');
+    if (passwordLength < 8) {
+        alert('Password must be at least 8 characters');
+        passwordLength = prompt('How many characters?');
+    }
     var specialCharacters = confirm('Include special characters?');
     var numericCharacters = confirm('Include numbers?');
     var upperCaseCharacters = confirm('Include upper case characters');
