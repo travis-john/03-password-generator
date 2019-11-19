@@ -1,5 +1,6 @@
 var textarea = document.getElementById('password');
 var disabledBtn = document.getElementById('copy');
+var generateBtn = document.getElementById('generate');
 
 function removeClass() {
     document.getElementById("copy").removeAttribute("disabled");
@@ -9,7 +10,7 @@ function removeClass() {
 }
 
 
-document.getElementById('generate').addEventListener('click', function(){
+generateBtn.addEventListener('click', function(){
     var passwordLength = prompt('How many characters?');
     var specialCharacters = confirm('Include special characters?');
     var numericCharacters = confirm('Include numbers?');
@@ -43,5 +44,11 @@ document.getElementById('generate').addEventListener('click', function(){
     textarea.value += password;
     removeClass();
 });
+
+disabledBtn.addEventListener('click', function() {
+    textarea.select();
+    document.execCommand('copy');
+    alert('copied to clipboard');
+})
 
 
