@@ -3,7 +3,7 @@ var disabledBtn = document.getElementById('copy');
 var generateBtn = document.getElementById('generate');
 
 function removeClass() {
-    document.getElementById("copy").removeAttribute("disabled");
+    disabledBtn.removeAttribute("disabled");
     if (disabledBtn.classList.contains('disabled')){
         disabledBtn.classList.remove('disabled');
     }
