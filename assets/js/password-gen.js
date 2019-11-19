@@ -19,7 +19,6 @@ generateBtn.addEventListener('click', function(){
     var characterPool = "";
     var password = "";
     
-    textarea.value = '';
     if (specialCharacters) {
         specialCharacters = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
         characterPool += specialCharacters;
