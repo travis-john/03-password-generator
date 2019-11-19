@@ -42,6 +42,7 @@ generateBtn.addEventListener('click', function(){
     }
     
     textarea.value += password;
+    
     removeClass();
 });
 
