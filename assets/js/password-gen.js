@@ -1,10 +1,5 @@
-// function generatePassword() {
-//     var passwordLength = prompt('How many characters?');
-//     var specialCharacters = confirm('Include special characters?');
-//     var numericCharacters = confirm('Include numbers?');
-//     var upperCaseCharacters = confirm('Include upper case characters');
-//     var lowerCaseCharacters = confirm('Include lower case characters');   
-// }
+var textarea = document.getElementById('password');
+var disabledBtn = document.getElementsByClassName('disabled');
 
 document.getElementById('generate').addEventListener('click', function(){
     var passwordLength = prompt('How many characters?');
@@ -12,9 +7,9 @@ document.getElementById('generate').addEventListener('click', function(){
     var numericCharacters = confirm('Include numbers?');
     var upperCaseCharacters = confirm('Include upper case characters');
     var lowerCaseCharacters = confirm('Include lower case characters');
-    var characterPool = '';
-    password = "";
-
+    var characterPool = "";
+    var password = "";
+    
     if (specialCharacters) {
         specialCharacters = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
         characterPool += specialCharacters;
@@ -35,9 +30,9 @@ document.getElementById('generate').addEventListener('click', function(){
     
     for(var i = 0; i <  passwordLength; i ++){
         password += characterPool.charAt(Math.floor(Math.random() * characterPool.length));
-        return password;
     }
-
+    
+    textarea.value += password;
 });
 
 

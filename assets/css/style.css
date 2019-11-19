@@ -42,6 +42,12 @@ textarea {
     padding: 1rem 0;
 }
 
+textarea {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
 textarea::placeholder {
     text-align: center;
     font-size: 1rem;
