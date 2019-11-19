@@ -1,5 +1,13 @@
 var textarea = document.getElementById('password');
-var disabledBtn = document.getElementsByClassName('disabled');
+var disabledBtn = document.getElementById('copy');
+
+function removeClass() {
+    document.getElementById("copy").removeAttribute("disabled");
+    if (disabledBtn.classList.contains('disabled')){
+        disabledBtn.classList.remove('disabled');
+    }
+}
+
 
 document.getElementById('generate').addEventListener('click', function(){
     var passwordLength = prompt('How many characters?');
@@ -33,6 +41,7 @@ document.getElementById('generate').addEventListener('click', function(){
     }
     
     textarea.value += password;
+    removeClass();
 });
 
 
