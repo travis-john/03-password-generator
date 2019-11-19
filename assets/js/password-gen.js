@@ -35,6 +35,7 @@ generateBtn.addEventListener('click', function(){
         upperCaseCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         characterPool += upperCaseCharacters;
     }
+    
     console.log(characterPool);
     
     for(var i = 0; i <  passwordLength; i ++){
