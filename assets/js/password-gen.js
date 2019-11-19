@@ -9,7 +9,6 @@ function removeClass() {
     }
 }
 
-
 generateBtn.addEventListener('click', function(){
     textarea.value='';
     var passwordLength = prompt('How many characters?');
@@ -50,6 +49,6 @@ disabledBtn.addEventListener('click', function() {
     textarea.select();
     document.execCommand('copy');
     alert('copied to clipboard');
-})
+});
 
 
