@@ -11,6 +11,7 @@ function removeClass() {
 
 
 generateBtn.addEventListener('click', function(){
+    textarea.value="";
     var passwordLength = prompt('How many characters?');
     var specialCharacters = confirm('Include special characters?');
     var numericCharacters = confirm('Include numbers?');
