@@ -32,7 +32,7 @@ generateBtn.addEventListener('click', function(){
         characterPool += lowerCaseCharacters;
     }
     if (upperCaseCharacters) {
-        upperCaseCharacters = lowerCaseCharacters.toUpperCase();
+        upperCaseCharacters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         characterPool += upperCaseCharacters;
     }
     console.log(characterPool);
