@@ -77,5 +77,3 @@ disabledBtn.addEventListener('click', function() {
 //     confirmation that password has been copied to clipboard
     alert('copied to clipboard');
 });
-
-
