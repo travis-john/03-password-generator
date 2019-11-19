@@ -20,10 +20,6 @@ generateBtn.addEventListener('click', function(){
     var characterPool = "";
     var password = "";
     
-    if (passwordLength < 8) {
-        alert('Password must be at least 8 characters!);
-        passwordLength = prompt('How many characters?);
-    }
     if (specialCharacters) {
         specialCharacters = '!@#$%^&*()_+~`|}{[]\:;?><,./-=';
         characterPool += specialCharacters;
