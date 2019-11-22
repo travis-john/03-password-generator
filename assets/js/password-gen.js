@@ -26,7 +26,7 @@ generateBtn.addEventListener('click', function(){
     var characterPool = "";
     var password = "";
 
-//     accounting for a passwordLength less than 8 numericCharacters
+//     accounting for a passwordLength less than 8 characters
     if (passwordLength < 8) {
       alert('Password must be at least 8 characters');
       passwordLength = prompt('How many characters?');
